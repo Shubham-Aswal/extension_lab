@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <icon></icon>
-      <h1>AI Mode</h1>
-      <p>stay focused stay productive</p>
-    </header>
-    <main>
-      <div class="btn-container">
-        <input type="radio" name="" id="" />
-        <label  >Focus Mode</label>
-      </div>
-      <div>
-        <label for="">What are you working on</label>
-        <div>
-          <input type="text" placeholder="learning react"/>
-          <button>Add</button>
-        </div>
-        <label for=""> Ad site Manullay to block</label
-        ><input type="text"  placeholder=""/>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🎯 AI Mode</h1>
+    <p>Stay focused stay productive</p>
+  </header>
+  <main>
+    <div class="toggle-section">
+      <input type="checkBox" name="" id="focuscheckbox" class="toggle-checkbox" />
+      <label for="focuscheckbox">
+        <div class="outer-box">
+          <div class="circle"></div>
+        </div>
+      </label>
+      <h2>Focus Mode</h2>
+    </div>
+    <div class="blocking-section">
+      <label for="workTopicInput">What are you working on ?</label>
+      <div class="input-section">
+        <input type="text" id="workTopicInput" placeholder="eg. Learning react Building Websites" />
+        <button>Add</button>
       </div>
-    </main>
-  </body>
+      <label for="siteInput">Add site Manually to block: </label>
+      <div class="input-section">
+        <input type="text" id="siteInput" placeholder="eg. youtube , facebook" />
+        <button>Block Site</button>
+      </div>
+
+    </div>
+    <div class="blocked-list-section">
+      <h3>Blocked Sites:</h3>
+    </div>
+  </main>
+</body>
+
 </html>
+
