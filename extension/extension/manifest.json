@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Jarvis_from_meesho",
+  "description": "Stay focused with AI-powered site blocking",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI focus Mode"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .top-div {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+    }
+    .bottom-div {
+        height: 100px;
+        /* width: 100px; */
+        background-color: red;
+    }
+    button{
+        padding:10px;
+    }
+</style>
+ <!-- 
+when clicked on button -> it should show / hide bottom-div
+1. check when button is clicked
+    a. select the button  -> document.querySelector(".toggle");
+    b. how do you listen to that click of button
+2. show / hide the botto-div
+    a. where do you write the logic  -> function
+    b. what is the logic -> 
+ -->
+<body>
+    <h2>Todo App</h2>
+    <div class="top-div">
+        <button  class="toggle">Show/Hide</button>
+    </div>
+    <div class="bottom-div" style="border-radius: 25px;">
+    </div>
+    <script>
+        //select the button
+        let button=  document.querySelector(".toggle");
+        let bottomDiv=document.querySelector(".bottom-div");
+        let visibilityFlag=true
+        //  listen to that button
+        button.addEventListener("click",function onClick(){
+            // alert("Hello");
+            //  if bottom div is hidden then show it 
+            // if shown then hide it 
+            // element // style // property=value
+            if(visibilityFlag==true){
+                bottomDiv.style.display="none";
+            }else{
+                bottomDiv.style.display="block";
+            }
+            visibilityFlag =!visibilityFlag;
+        })
+    </script>
+</body>
+
+</html>
+
+
+<!-- addEventListener
+click ->  -->

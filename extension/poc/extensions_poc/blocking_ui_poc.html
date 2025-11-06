@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 
+1. take task from input when button is clicked
+    1. when button clicked
+        where is button
+        what event to add
+    2. take the input value 
+        1. select the input
+        2. get the task from the input
+2. Add that task to the list 
+    create an li 
+    add task to it
+-->
+
+<body>
+
+    <input type="text">
+
+    <button>add task
+    </button>
+    <ul class="list">
+
+    </ul>
+
+</body>
+<script>
+
+    let button = document.querySelector("button");
+    let input = document.querySelector("input");
+    let ul = document.querySelector(".list");
+    button.addEventListener("click", function addTask() {
+        // value
+        let task = input.value;
+        console.log("task is", task);
+        // create li tag
+        let listItem = document.createElement("li");
+        // add listItem inside ul
+        ul.appendChild(listItem);
+        //   add task in listItem
+        listItem.textContent = task;
+        input.value = "";
+    })
+
+</script>
+
+</html>
